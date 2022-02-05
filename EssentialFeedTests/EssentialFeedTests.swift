@@ -16,7 +16,7 @@ class EssentialFeedTests: XCTestCase {
         
     }
 
-    func test_load_requestDataFromURL(){
+    func test_load_requestsDataFromURL(){
         let url = URL(string: "http://a-given-url.com")!
         let (sut, client) = makeSUT()
         sut.load()
