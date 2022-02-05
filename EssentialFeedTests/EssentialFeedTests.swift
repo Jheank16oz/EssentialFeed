@@ -19,15 +19,15 @@ class EssentialFeedTests: XCTestCase {
     func test_load_requestsDataFromURL(){
         let url = URL(string: "http://a-given-url.com")!
         let (sut, client) = makeSUT()
-        sut.load()
+        sut.load { _ in }
         XCTAssertEqual(client.requestedURLs, [url])
     }
     
     func test_loadTwice_requestsDataFromURL(){
         let url = URL(string: "http://a-given-url.com")!
         let (sut, client) = makeSUT()
-        sut.load()
-        sut.load()
+        sut.load { _ in }
+        sut.load { _ in }
         XCTAssertEqual(client.requestedURLs, [ url, url])
     }
     
