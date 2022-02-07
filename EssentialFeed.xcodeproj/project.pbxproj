@@ -19,6 +19,7 @@
 		3FB3DBFF27B0259C0076E3F2 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3DBFE27B0259C0076E3F2 /* FeedItem.swift */; };
 		3FCC8C7227AEADF2008BDE06 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC8C7127AEADF2008BDE06 /* RemoteFeedLoader.swift */; };
 		3FE945FA27B15B6000FF24ED /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE945F927B15B6000FF24ED /* HTTPClient.swift */; };
+		3FE945FC27B15C3300FF24ED /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE945FB27B15C3300FF24ED /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3FB3DBFE27B0259C0076E3F2 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3FCC8C7127AEADF2008BDE06 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		3FE945F927B15B6000FF24ED /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		3FE945FB27B15C3300FF24ED /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		3F5E33CE27A817180023125D = {
 			isa = PBXGroup;
 			children = (
+				3FE945FB27B15C3300FF24ED /* FeedItemsMapper.swift */,
 				3F5E33D927A817180023125D /* EssentialFeed */,
 				3F5E33F027A8171A0023125D /* EssentialFeedTests */,
 				3F5E33FA27A8171A0023125D /* EssentialFeedUITests */,
@@ -288,6 +291,7 @@
 				3FCC8C7227AEADF2008BDE06 /* RemoteFeedLoader.swift in Sources */,
 				3F5E33DF27A817180023125D /* ViewController.swift in Sources */,
 				3FE945FA27B15B6000FF24ED /* HTTPClient.swift in Sources */,
+				3FE945FC27B15C3300FF24ED /* FeedItemsMapper.swift in Sources */,
 				3F5E33DB27A817180023125D /* AppDelegate.swift in Sources */,
 				3FB3DBFF27B0259C0076E3F2 /* FeedItem.swift in Sources */,
 				3F5E33DD27A817180023125D /* SceneDelegate.swift in Sources */,
