@@ -41,7 +41,7 @@ class EssentialFeedTests: XCTestCase {
         })
     }
     
-    func test_load_deliversErrorOnNonHTTPResponse(){
+    func test_load_deliversErrorOnNon200HTTPResponse(){
         let (sut, client) = makeSUT()
         
         let samples = [199, 201, 300, 400, 500]
@@ -92,6 +92,7 @@ class EssentialFeedTests: XCTestCase {
             client.complete(withStatusCode: 200, data: json)
         })
     }
+    
     
     // MARK: - Helpers
     private func makeSUT(url:URL = URL(string:"http://a-given-url.com")!) ->(sut:

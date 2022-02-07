@@ -71,3 +71,4 @@ private struct Item: Decodable {
         return FeedItem(id: id, description: description, location: location, imageURL: image)
     }
 }
+  
