@@ -95,11 +95,20 @@ class EssentialFeedTests: XCTestCase {
     
     
     // MARK: - Helpers
-    private func makeSUT(url:URL = URL(string:"http://a-given-url.com")!) ->(sut:
+    private func makeSUT(url:URL = URL(string:"http://a-given-url.com")!, file: StaticString = #file, line: UInt = #line) ->(sut:
                                                                         RemoteFeedLoader, client:HTTPCLientSpy){
         let client = HTTPCLientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
+        trackForMemoryLeaks(sut)
+        trackForMemoryLeaks(client)
+        
         return (sut, client)
+    }
+    
+    private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line){
+        addTeardownBlock { [ weak instance] in
+            XCTAssertNil(instance, "Instance should been deallocated. Potencial memory leak.", file: file, line: line)
+        }
     }
     
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedItem, json: [String:Any]) {
