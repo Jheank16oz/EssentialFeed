@@ -87,7 +87,7 @@
 		3F5E33D927A817180023125D /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				3FB3DBFD27B025840076E3F2 /* FeedItem */,
+				3FB3DBFD27B025840076E3F2 /* Feed Feature */,
 				3FCC8C7027AEADB3008BDE06 /* Feed Api */,
 				3F5E340A27A817880023125D /* EssentialFeed.entitlements */,
 				3F5E33DA27A817180023125D /* AppDelegate.swift */,
@@ -109,12 +109,12 @@
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
 		};
-		3FB3DBFD27B025840076E3F2 /* FeedItem */ = {
+		3FB3DBFD27B025840076E3F2 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
 				3FB3DBFE27B0259C0076E3F2 /* FeedItem.swift */,
 			);
-			path = FeedItem;
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 		3FCC8C7027AEADB3008BDE06 /* Feed Api */ = {
