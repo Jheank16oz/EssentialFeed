@@ -123,8 +123,8 @@
 		3FCC8C7027AEADB3008BDE06 /* Feed Api */ = {
 			isa = PBXGroup;
 			children = (
-				3FE945FB27B15C3300FF24ED /* FeedItemsMapper.swift */,
 				3FCC8C7127AEADF2008BDE06 /* RemoteFeedLoader.swift */,
+				3FE945FB27B15C3300FF24ED /* FeedItemsMapper.swift */,
 				3FE945F927B15B6000FF24ED /* HTTPClient.swift */,
 			);
 			path = "Feed Api";
