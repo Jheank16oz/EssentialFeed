@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         run: |
-          xcodebuild build-for-testing -project GameOfLife.xcodeproj -scheme GameOfLife
+          xcodebuild build-for-testing -project EssentialFeed.xcodeproj -scheme "CI"
       - name: Test
         run: |
           xcodebuild test -project EssentialFeed.xcodeproj -scheme "CI"  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
