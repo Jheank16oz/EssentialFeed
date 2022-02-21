@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         run: |
-          xcodebuild build-for-testing -project EssentialFeed.xcodeproj -scheme "CI"
+          xcodebuild build-for-testing -project EssentialFeed.xcodeproj -scheme CI CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Test
         run: |
-          xcodebuild test -project EssentialFeed.xcodeproj -scheme "CI"  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild test -project EssentialFeed.xcodeproj -scheme CI  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
